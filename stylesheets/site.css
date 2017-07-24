@@ -1,0 +1,96 @@
+body {
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  padding: 20px;
+  text-align: center;
+  height: 100%; }
+
+a {
+  color: rgba(0, 0, 0, 0.7); }
+  a:focus, a:hover {
+    color: rgba(0, 0, 0, 0.6); }
+
+button {
+  -webkit-appearance: none;
+  background: #00B8D4;
+  border-radius: 2px;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  outline: none;
+  margin: 20px 0 30px 0;
+  padding: 22px 0;
+  width: 100%; }
+  button:active {
+    background: #008ca1; }
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase; }
+
+.forms {
+  width: 50%;
+  float: left; }
+
+.clear {
+  clear: both; }
+
+.code {
+  width: 50%;
+  float: left;
+  height: 100%; }
+
+.middleman-logo {
+  margin-bottom: 1rem;
+  width: 10rem; }
+
+.html {
+  width: 80%;
+  padding: 40px;
+  background: #EBF0F0;
+  text-align: left;
+  font-family: 'Inconsolata', Courier New;
+  font-size: 11px;
+  margin: 0 auto;
+  height: 100%; }
+
+.row:after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.field {
+  margin-bottom: 20px;
+  width: 45%;
+  padding-right: 5%;
+  float: left; }
+
+.field > * {
+  width: 100%;
+  display: block;
+  text-align: left; }
+
+label {
+  margin-bottom: 10px; }
+
+button {
+  margin-bottom: 30px; }
+
+.wrap {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px; }
+
+.radio {
+  font-size: 12px; }
+
+#bar-graph, #line-graph {
+  background: gray; }
+  #bar-graph svg, #line-graph svg {
+    background: white; }

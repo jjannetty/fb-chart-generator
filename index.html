@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Middleman</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" rel="stylesheet">
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+  </head>
+
+  <body class="index">
+    <section class='forms'>
+  <div class='wrap'>
+    <h2>Bar Graph</h2>
+    <div id='bar-graph'></div>
+    <div class='row'>
+      <div class='field'>
+        <label>data</label>
+        <input type="text" id="bar-data" value="1 2 3 4 5" />
+      </div>
+      <div class='field'>
+        <label>chart width</label>
+        <input type="text" id="bar-width" value="140" />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='field'>
+        <label>chart height</label>
+        <input type="text" id="bar-height" value="80" />
+      </div>
+      <div class='field'>
+        <label>domain</label>
+        <input type="text" id="bar-domain" />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='field'>
+        <label>font size</label>
+        <input type="text" id="bar-font-size" value="6" />
+      </div>
+      <div class='field'>
+        <label>Margin</label>
+        <input type="text" id="bar-margin" value="15,22" />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='field'>
+        <label>X Labels</label>
+        <div class='radio'>
+          <input type="radio" name="bar x labels" value="1,2,3,4,5+" class="x-labels" checked="checked" />
+          Legs Per PNR
+        </div>
+        <div class='radio'>
+          <input type="radio" name="bar x labels" value="1/YR,2-4/YR,5-12/YR,1-2/MO,&gt;2/MO" class="x-labels" />
+          PNRs per employee
+        </div>
+      </div>
+    </div>
+    <button id='draw-bar-graph'>
+      Generate
+    </button>
+  </div>
+  <div class='wrap'>
+    <h2>Line Graph</h2>
+    <div id='line-graph'></div>
+    <div class='row'>
+      <div class='field'>
+        <label>data 1</label>
+        <input type="text" id="line-1-data" value="1 2 3 4 5 6 7 8 9 10 11 12" />
+      </div>
+      <div class='field'>
+        <label>data 2</label>
+        <input type="text" id="line-2-data" value="12 11 10 9 8 7 6 5 4 3 2 1" />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='field'>
+        <label>domain 1</label>
+        <input type="text" id="line-1-domain" />
+      </div>
+      <div class='field'>
+        <label>domain 2</label>
+        <input type="text" id="line-2-domain" />
+      </div>
+    </div>
+    <div class='row'>
+      <div class='field'>
+        <label>margin</label>
+        <input type="text" id="line-margin" value="25,25" />
+      </div>
+      <div class='field'>
+        <label>chart size</label>
+        <div class='radio'>
+          <input type="radio" name="line size" value="326,140,6" class="line-size" checked="checked" />
+          Travel Costs - Big
+          <br>
+          <input type="radio" name="line size" value="144,92,5" class="line-size" />
+          Travel Costs - Small
+          <br>
+          <input type="radio" name="line size" value="270,150,6" class="line-size" />
+          Disruption Costs - Big
+          <br>
+          <input type="radio" name="line size" value="248,95,5" class="line-size" />
+          Disruption Costs - Small - 2 subsets
+          <br>
+          <input type="radio" name="line size" value="152,95,5" class="line-size" />
+          Disruption Costs - Small - 3 subsets
+        </div>
+      </div>
+    </div>
+    <button id='draw-line-graph'>
+      Generate
+    </button>
+  </div>
+  <div class='clear'></div>
+</section>
+<section class='code'>
+  <h4>COPY AND PASTE CODE INTO .SVG FILE</h4>
+  <h5>
+    <i>Click text box. Press ⌘ + a to select code. Press ⌘ + c to copy.</i>
+  </h5>
+  <textarea name="html" class="html" rows="50">
+  </textarea>
+  <div class='clear'></div>
+</section>
+
+  </body>
+  <script src="/javascripts/site.js"></script>
+</html>

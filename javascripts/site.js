@@ -75,17 +75,8 @@
   };
 
   getMonthArray = function() {
-    var a, b, months, startMonth, startMonthIndex;
-    months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    startMonth = $('#line-start-month').val();
-    startMonthIndex = months.indexOf(startMonth);
-    if (startMonthIndex === 0) {
-      return months;
-    } else {
-      a = months.slice(startMonthIndex, 13);
-      b = months.slice(0, startMonthIndex);
-      return a.concat(b);
-    }
+    var months;
+    return months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   };
 
   getHeigth = function(type) {
